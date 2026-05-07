@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>My Favorite Music</title>
+
+    <meta name="description" content="A music website with CSS styling and JavaScript animation.">
+
+    <style>
+
+        body {
+            background-color: lightblue;
+            font-family: Arial;
+            text-align: center;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            margin: 20px auto;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: darkblue;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>My Favorite Song</h1>
+
+    <p>Welcome to my music webpage assignment.</p>
+
+    <!-- YouTube Video -->
+
+    <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/OPf0YbXqDm0"
+        title="YouTube video player"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+
+    <h2>JavaScript Animation</h2>
+
+    <div id="box"></div>
+
+    <button onclick="moveBox()">Start Animation</button>
+
+    <script>
+
+        function moveBox() {
+
+            let box = document.getElementById("box");
+
+            let position = 0;
+
+            let animation = setInterval(frame, 5);
+
+            function frame() {
+
+                if (position == 300) {
+
+                    clearInterval(animation);
+
+                } else {
+
+                    position++;
+
+                    box.style.left = position + "px";
+
+                }
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
