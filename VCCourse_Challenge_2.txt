@@ -1,1 +1,11 @@
 This is my VCCourse Challenge 2 file.
+# Portfolio Website
+
+This portfolio website was created using HTML and CSS.
+
+Projects Completed:
+- HTML Website
+- CSS Styling
+- Bootstrap Layout
+
+The website is deployed using GitHub Pages.
